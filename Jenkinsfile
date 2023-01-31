@@ -10,7 +10,8 @@ pipeline {
         stage('git repo & clean') {
             steps {
                //sh "rmdir  /s /q Testcypressinjenkins"
-                sh "git clone https://github.com/Yoel-samoun/test-cypress-playwrite.git"
+                echo 'clean Hello world!' 
+                //sh "git clone https://github.com/Yoel-samoun/test-cypress-playwrite.git"
                // sh "mvn clean -f Testcypressinjenkins"
             }
         }
