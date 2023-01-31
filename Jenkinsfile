@@ -28,7 +28,7 @@ pipeline {
             steps {
                  // sh "npm install cypress"
                   
-                  sh "/Users/hubhip/.jenkins/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/Node16/bin/cypress/cypress run --spec \"e2e/app/test-app.cy.js\""
+                  sh "./Users/hubhip/Library/Caches/Cypress/12.4.1/cypress run --spec \"e2e/app/test-app.cy.js\""
                 //sh "mvn test -f Testcypressinjenkins"
             }
         }
