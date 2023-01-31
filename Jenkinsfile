@@ -26,7 +26,9 @@ pipeline {
          
         stage('test') {
             steps {
-                  sh "cypress run --spec \"e2e/app/test-app.cy.js\""
+                  sh "npm install cypress"
+                  
+                  sh "npx cypress open --spec \"e2e/app/test-app.cy.js\""
                 //sh "mvn test -f Testcypressinjenkins"
             }
         }
