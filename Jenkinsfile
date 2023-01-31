@@ -13,6 +13,11 @@ pipeline {
                 bat "mvn install -f Testcypressinjenkins"
             }
         }
+         stage('Stage 1') {
+                  steps {
+                      echo 'Hello world!' 
+                  }
+              }
         stage('test') {
             steps {
                 bat "mvn test -f Testcypressinjenkins"
