@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q Testcypressinjenkins"
+              // bat "rmdir  /s /q Testcypressinjenkins"
                 bat "git clone https://github.com/Yoel-samoun/test-cypress-playwrite.git"
                 bat "mvn clean -f Testcypressinjenkins"
             }
