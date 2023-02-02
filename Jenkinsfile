@@ -27,12 +27,12 @@ pipeline {
         stage('test') {
             steps {
                 echo "$PATH"
-                os.system ('/usr/local/bin/node /usr/local/bin/meyda -h')
+              
                  // sh "npm install cypress"
                 //sh "/Users/hubhip/node_modules/cypress/bin/cypress --version"
                   //sh "cypress verify 
                 //✔  Verified Cypress! /Users/hubhip/Library/Caches/Cypress/12.4.1/Cypress.app"
-                 // sh "/Users/hubhip/node_modules/cypress/bin/cypress run --spec \"e2e/app/test-app.cy.js\""
+                  sh "/Users/hubhip/node_modules/.bin/cypress run --spec \"e2e/app/test-app.cy.js\""
                 //sh "mvn test -f Testcypressinjenkins"
             }
         }
