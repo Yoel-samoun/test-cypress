@@ -11,7 +11,7 @@ pipeline {
             steps {
                //sh "rmdir  /s /q Testcypressinjenkins"
                 echo 'clean Hello world!' 
-                //sh "git clone https://github.com/Yoel-samoun/test-cypress-playwrite.git"
+                sh "git clone https://github.com/Yoel-samoun/test-cypress-playwrite.git"
                // sh "mvn clean -f Testcypressinjenkins"
             }
         }
