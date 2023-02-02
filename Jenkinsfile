@@ -27,7 +27,7 @@ pipeline {
         stage('test') {
             steps {
                  // sh "npm install cypress"
-                sh "./node_modules/.bin/cypress version "
+                sh "/Users/hubhip/node_modules/cypress/bin/cypress --version"
                   //sh "cypress verify 
                 //✔  Verified Cypress! /Users/hubhip/Library/Caches/Cypress/12.4.1/Cypress.app"
                   //sh "/Users/hubhip/Library/Caches/Cypress/12.4.1/cypress run --spec \"e2e/app/test-app.cy.js\""
